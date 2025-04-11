@@ -46,34 +46,6 @@ const vehicles = [
       year: 2023
     },
     best: false
-  },
-  {
-    id: 4,
-    name: "Toyota Vellfire",
-    image: "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=800&auto=format&fit=crop",
-    description: "A premium luxury MPV with advanced features and spacious interior.",
-    features: ["6 Seats", "Luxury Interior", "Advanced Technology", "Spacious Cabin"],
-    color: "Multiple Colors Available",
-    specifications: {
-      seats: 6,
-      fuelType: "Hybrid",
-      year: 2023
-    },
-    best: false
-  },
-  {
-    id: 5,
-    name: "Nissan Landy",
-    image: "https://images.unsplash.com/photo-1567273703372-d93d435a1554?q=80&w=800&auto=format&fit=crop",
-    description: "Reliable and comfortable 6-seater with excellent fuel efficiency.",
-    features: ["6 Seats", "Reliability", "Fuel Efficient", "Comfortable Interior"],
-    color: "Multiple Colors Available",
-    specifications: {
-      seats: 6,
-      fuelType: "Gasoline",
-      year: 2023
-    },
-    best: false
   }
 ];
 
@@ -81,24 +53,24 @@ const VehicleShowcase = () => {
   return (
     <section id="vehicles" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+        <h2 className="mb-3 text-center text-3xl font-bold md:text-4xl">
           Our Premium 6-Seater Fleet
         </h2>
-        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="mx-auto mb-12 max-w-3xl text-center text-xl text-gray-600">
           Choose from our selection of premium 6-seater vehicles, perfect for maximizing your earning potential.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {vehicles.map((vehicle) => (
-            <Card key={vehicle.id} className="overflow-hidden flex flex-col h-full border-2 border-transparent hover:border-veep-orange transition-all duration-300">
+            <Card key={vehicle.id} className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange">
               <div className="relative">
                 <img 
                   src={vehicle.image} 
                   alt={vehicle.name} 
-                  className="w-full h-48 object-cover"
+                  className="h-48 w-full object-cover"
                 />
                 {vehicle.best && (
-                  <Badge className="absolute top-3 right-3 bg-veep-orange">Most Popular</Badge>
+                  <Badge className="absolute right-3 top-3 bg-veep-orange">Most Popular</Badge>
                 )}
               </div>
               
@@ -108,21 +80,21 @@ const VehicleShowcase = () => {
               </CardHeader>
               
               <CardContent className="flex-grow">
-                <div className="grid grid-cols-2 gap-2 mb-4">
+                <div className="mb-4 grid grid-cols-2 gap-2">
                   <div className="flex items-center">
-                    <Users className="h-5 w-5 mr-2 text-veep-orange" />
+                    <Users className="mr-2 h-5 w-5 text-veep-orange" />
                     <span>{vehicle.specifications.seats} Seats</span>
                   </div>
                   <div className="flex items-center">
-                    <Fuel className="h-5 w-5 mr-2 text-veep-orange" />
+                    <Fuel className="mr-2 h-5 w-5 text-veep-orange" />
                     <span>{vehicle.specifications.fuelType}</span>
                   </div>
                   <div className="flex items-center">
-                    <CarFront className="h-5 w-5 mr-2 text-veep-orange" />
+                    <CarFront className="mr-2 h-5 w-5 text-veep-orange" />
                     <span>{vehicle.color}</span>
                   </div>
                   <div className="flex items-center">
-                    <Calendar className="h-5 w-5 mr-2 text-veep-orange" />
+                    <Calendar className="mr-2 h-5 w-5 text-veep-orange" />
                     <span>{vehicle.specifications.year}</span>
                   </div>
                 </div>

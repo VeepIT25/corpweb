@@ -11,12 +11,12 @@ import {
 
 const ComparisonTable = () => {
   return (
-    <section id="why-veep" className="py-16 bg-gray-50">
+    <section id="why-veep" className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+        <h2 className="mb-3 text-center text-3xl font-bold md:text-4xl">
           Why Choose VEEP?
         </h2>
-        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="mx-auto mb-12 max-w-3xl text-center text-xl text-gray-600">
           See how VEEP compares to traditional rental services in Singapore.
         </p>
 

@@ -3,16 +3,16 @@ import { CheckCircle2 } from "lucide-react";
 
 const BrandStory = () => {
   return (
-    <section id="brand-story" className="py-16 bg-gray-50">
+    <section id="brand-story" className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
           VEEP Brand Story — Drive Big, Live Bigger
         </h2>
 
-        <div className="space-y-12 max-w-4xl mx-auto">
+        <div className="mx-auto max-w-4xl space-y-12">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold flex items-center">
-              <span className="bg-veep-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-3">1</span>
+            <h3 className="flex items-center text-2xl font-bold">
+              <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-veep-orange text-white">1</span>
               VEEP Believes 6-Seaters Are the Future
             </h3>
             <p className="pl-11 text-lg">
@@ -21,8 +21,8 @@ const BrandStory = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold flex items-center">
-              <span className="bg-veep-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-3">2</span>
+            <h3 className="flex items-center text-2xl font-bold">
+              <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-veep-orange text-white">2</span>
               VEEP Puts Drivers at the Heart of Everything
             </h3>
             <p className="pl-11 text-lg">
@@ -31,8 +31,8 @@ const BrandStory = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold flex items-center">
-              <span className="bg-veep-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-3">3</span>
+            <h3 className="flex items-center text-2xl font-bold">
+              <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-veep-orange text-white">3</span>
               Big for Work, Perfect for Family
             </h3>
             <p className="pl-11 text-lg">
@@ -41,8 +41,8 @@ const BrandStory = () => {
           </div>
         </div>
 
-        <div className="mt-16 bg-white rounded-lg shadow-md p-6 md:p-8">
-          <h3 className="text-2xl font-bold mb-6 text-center">The VEEP Difference</h3>
+        <div className="mt-16 rounded-lg bg-white p-6 shadow-md md:p-8">
+          <h3 className="mb-6 text-center text-2xl font-bold">The VEEP Difference</h3>
           
           <div className="space-y-4">
             {[
@@ -54,7 +54,7 @@ const BrandStory = () => {
               "Higher earning potential with multi-purpose vehicles"
             ].map((item, index) => (
               <div key={index} className="flex items-start">
-                <CheckCircle2 className="h-6 w-6 text-veep-orange flex-shrink-0 mr-2" />
+                <CheckCircle2 className="mr-2 h-6 w-6 flex-shrink-0 text-veep-orange" />
                 <p className="text-lg">{item}</p>
               </div>
             ))}

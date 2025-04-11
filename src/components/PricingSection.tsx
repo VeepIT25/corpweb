@@ -59,37 +59,37 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+        <h2 className="mb-3 text-center text-3xl font-bold md:text-4xl">
           Competitive Leasing Pricing
         </h2>
-        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="mx-auto mb-12 max-w-3xl text-center text-xl text-gray-600">
           Lowest rates in Singapore guaranteed. No hidden fees, transparent pricing.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {pricingPlans.map((plan) => (
             <Card 
               key={plan.id} 
-              className={`flex flex-col h-full ${plan.popular ? 'border-veep-orange shadow-lg relative' : ''}`}
+              className={`flex h-full flex-col ${plan.popular ? 'relative border-veep-orange shadow-lg' : ''}`}
             >
               {plan.popular && (
-                <Badge className="absolute top-4 right-4 bg-veep-orange">Best Value</Badge>
+                <Badge className="absolute right-4 top-4 bg-veep-orange">Best Value</Badge>
               )}
               
-              <CardHeader className={plan.popular ? 'bg-veep-orange text-white rounded-t-lg' : ''}>
-                <CardTitle className="text-2xl text-center">{plan.vehicle}</CardTitle>
+              <CardHeader className={plan.popular ? 'rounded-t-lg bg-veep-orange text-white' : ''}>
+                <CardTitle className="text-center text-2xl">{plan.vehicle}</CardTitle>
               </CardHeader>
               
               <CardContent className="flex-grow pt-6">
-                <div className="text-center mb-6">
+                <div className="mb-6 text-center">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-gray-500 ml-2">{plan.period}</span>
+                  <span className="ml-2 text-gray-500">{plan.period}</span>
                 </div>
                 
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle2 className="h-5 w-5 text-veep-orange flex-shrink-0 mr-2 mt-0.5" />
+                      <CheckCircle2 className="mt-0.5 mr-2 h-5 w-5 flex-shrink-0 text-veep-orange" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -108,12 +108,12 @@ const PricingSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-gray-50 rounded-lg p-6 shadow-sm">
-          <h3 className="text-xl font-bold mb-4 text-center">Additional Information</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="mt-12 rounded-lg bg-gray-50 p-6 shadow-sm">
+          <h3 className="mb-4 text-center text-xl font-bold">Additional Information</h3>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
-              <h4 className="font-semibold mb-2">Leasing Terms:</h4>
-              <ul className="list-disc pl-5 space-y-1">
+              <h4 className="mb-2 font-semibold">Leasing Terms:</h4>
+              <ul className="space-y-1 pl-5 list-disc">
                 <li>Minimum lease period: 6 months</li>
                 <li>Weekly, bi-weekly, or monthly payment options</li>
                 <li>Security deposit: 2 weeks of rental</li>
@@ -121,8 +121,8 @@ const PricingSection = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">What's Included:</h4>
-              <ul className="list-disc pl-5 space-y-1">
+              <h4 className="mb-2 font-semibold">What's Included:</h4>
+              <ul className="space-y-1 pl-5 list-disc">
                 <li>Comprehensive insurance</li>
                 <li>Regular maintenance services</li>
                 <li>Road tax</li>

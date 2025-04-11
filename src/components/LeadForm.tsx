@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
+import { Phone } from "lucide-react";
 
 const LeadForm = () => {
   const { toast } = useToast();
@@ -41,8 +42,8 @@ const LeadForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+    <div className="rounded-lg bg-white p-6 shadow-lg md:p-8">
+      <h2 className="mb-6 text-center text-2xl font-bold text-gray-800">
         Start Your Journey with VEEP
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -55,6 +56,7 @@ const LeadForm = () => {
             onChange={handleChange}
             placeholder="Enter your full name"
             required
+            className="mt-1"
           />
         </div>
         
@@ -68,6 +70,7 @@ const LeadForm = () => {
             onChange={handleChange}
             placeholder="Enter your email"
             required
+            className="mt-1"
           />
         </div>
         
@@ -80,13 +83,17 @@ const LeadForm = () => {
             onChange={handleChange}
             placeholder="Enter your phone number"
             required
+            className="mt-1"
           />
         </div>
         
         <div>
           <Label htmlFor="vehicleInterest">Vehicle Interest</Label>
-          <Select onValueChange={handleVehicleChange}>
-            <SelectTrigger id="vehicleInterest">
+          <Select 
+            onValueChange={handleVehicleChange}
+            value={formData.vehicleInterest}
+          >
+            <SelectTrigger id="vehicleInterest" className="mt-1">
               <SelectValue placeholder="Select a vehicle model" />
             </SelectTrigger>
             <SelectContent>
@@ -101,12 +108,19 @@ const LeadForm = () => {
         
         <Button 
           type="submit" 
-          className="w-full bg-veep-orange hover:bg-veep-orange-dark text-white"
+          className="w-full bg-veep-orange text-white hover:bg-veep-orange-dark"
         >
           Request Information
         </Button>
         
-        <p className="text-xs text-center text-gray-500 mt-4">
+        <div className="mt-4 flex justify-center">
+          <a href="tel:+6561234567" className="flex items-center gap-2 text-veep-orange hover:underline">
+            <Phone size={18} />
+            Call Us Directly: +65 6123 4567
+          </a>
+        </div>
+        
+        <p className="mt-4 text-center text-xs text-gray-500">
           By submitting this form, you agree to our privacy policy and terms of service.
         </p>
       </form>
