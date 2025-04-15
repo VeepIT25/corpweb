@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -97,7 +96,7 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} VEEP. All rights reserved.
             </p>
             <p className="mt-2 text-gray-400 md:mt-0">
-              Designed & Developed with ❤️ in Singapore
+              #VEEPUP
             </p>
           </div>
         </div>
