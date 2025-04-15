@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -80,7 +79,9 @@ const VehicleShowcase = () => {
                       src={vehicle.image} 
                       alt={vehicle.name} 
                       className={`h-full w-full object-contain transform ${
-                        vehicle.name === 'Toyota Noah' ? 'scale-125' : 'scale-100'
+                        vehicle.name === 'Toyota Noah' ? 'scale-125' : 
+                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-90 -translate-x-2' : 
+                        'scale-100'
                       }`}
                     />
                   </div>
