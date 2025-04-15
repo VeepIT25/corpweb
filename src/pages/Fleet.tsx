@@ -8,7 +8,7 @@ const vehicles = [
   {
     id: 1,
     name: "Toyota Noah",
-    image: "https://images.unsplash.com/photo-1581092919535-7146ff431cf2?q=80&w=800&auto=format&fit=crop",
+    image: "/lovable-uploads/5feae213-5fd6-4782-b5b7-ea40bfcc5af6.png",
     description: "A spacious and fuel-efficient 6-seater MPV perfect for families and ride-sharing.",
     features: ["Advanced Safety", "Fuel Efficient", "Spacious Storage", "Latest Model"],
     specifications: {
