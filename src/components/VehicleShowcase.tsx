@@ -73,7 +73,7 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="max-w-[130%] max-h-[130%] object-contain" 
+                      className="max-w-[160%] max-h-[160%] object-contain" 
                     />
                   </div>
                 </AspectRatio>
@@ -138,3 +138,4 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
+
