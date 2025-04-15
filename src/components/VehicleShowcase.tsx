@@ -19,7 +19,7 @@ const vehicles = [
       fuelType: "Hybrid",
       year: 2023
     },
-    best: false // Keeping this field in case it's used elsewhere, but removing the badge rendering
+    best: false
   },
   {
     id: 2,
@@ -80,7 +80,7 @@ const VehicleShowcase = () => {
                       alt={vehicle.name} 
                       className={`h-full w-full object-contain transform transition-transform duration-[3000ms] ${
                         vehicle.name === 'Toyota Noah' ? 'scale-125' : 
-                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-105' : 
+                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-95' : 
                         vehicle.name === 'Honda Spada' ? 'scale-110' : 
                         'scale-100'
                       }`}
