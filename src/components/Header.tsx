@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
@@ -33,6 +32,9 @@ const Header = () => {
           <a href="#vehicles" className="text-gray-700 transition-colors hover:text-veep-orange">
             Vehicles
           </a>
+          <a href="/fleet" className="text-gray-700 transition-colors hover:text-veep-orange">
+            Fleet
+          </a>
           <a href="#why-veep" className="text-gray-700 transition-colors hover:text-veep-orange">
             Why VEEP
           </a>
@@ -48,6 +50,7 @@ const Header = () => {
           </Button>
         </nav>
 
+        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="absolute left-0 right-0 top-full animate-fade-in bg-white shadow-md md:hidden">
             <div className="container mx-auto flex flex-col space-y-4 px-4 py-4">
@@ -57,6 +60,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Vehicles
+              </a>
+              <a
+                href="/fleet"
+                className="py-2 text-gray-700 transition-colors hover:text-veep-orange"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Fleet
               </a>
               <a
                 href="#why-veep"
