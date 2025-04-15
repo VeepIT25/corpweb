@@ -48,7 +48,7 @@ const WorkshopSection = () => {
                 <div>
                   <h4 className="font-semibold text-xl mb-2">Strategic Location</h4>
                   <p className="text-gray-600">
-                    Conveniently located at Sin Ming Lane, Singapore. Easy access and ample parking space available.
+                    Conveniently located at 385 Sin Ming Dr, Singapore. Easy access and ample parking space available.
                   </p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const WorkshopSection = () => {
 
           <div className="h-[400px] relative rounded-2xl overflow-hidden shadow-lg">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7055260674307!2d103.83433627578701!3d1.3516499617116925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17168b052f43%3A0x7d55654f8c9b8c30!2sSin%20Ming%20Ln%2C%20Singapore!5e0!3m2!1sen!2ssg!4v1709661518895!5m2!1sen!2ssg" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7459895943483!2d103.83377267471!3d1.3576116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17153e2c0001%3A0x9a9e989da0fd5ec7!2s385%20Sin%20Ming%20Dr%2C%20Singapore%20575718!5e0!3m2!1sen!2ssg!4v1709734467445!5m2!1sen!2ssg" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
