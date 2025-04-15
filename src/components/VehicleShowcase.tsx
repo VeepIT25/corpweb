@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -79,7 +78,7 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="h-full w-full object-contain transform scale-125 transition-transform duration-1000 ease-in-out hover:scale-[1.35]"
+                      className="h-full w-full object-contain transform scale-100"
                     />
                   </div>
                 </AspectRatio>
@@ -146,4 +145,3 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
-
