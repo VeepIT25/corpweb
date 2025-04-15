@@ -55,11 +55,11 @@ const Index = () => {
         </div>
       </section>
       
+      <BrandStory />
+      
       <VehicleShowcase />
       
       <ComparisonTable />
-      
-      <BrandStory />
       
       <section className="bg-veep-orange py-16">
         <div className="container mx-auto px-4 text-center text-white">
