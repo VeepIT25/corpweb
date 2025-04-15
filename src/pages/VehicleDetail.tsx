@@ -78,7 +78,7 @@ const VehicleDetail = () => {
                 <img 
                   src={vehicle.mainImage} 
                   alt={vehicle.name}
-                  className="object-contain w-full h-full transform scale-125"
+                  className="object-contain w-full h-full transform scale-150" // Increased scale from 125 to 150
                 />
               </div>
             </div>
