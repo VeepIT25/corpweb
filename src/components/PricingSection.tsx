@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,8 +8,6 @@ const pricingPlans = [
   {
     id: 1,
     vehicle: "Toyota Noah",
-    price: "$85",
-    period: "per day",
     popular: false,
     features: [
       "Brand new vehicle",
@@ -22,8 +21,6 @@ const pricingPlans = [
   {
     id: 2,
     vehicle: "Honda Spada",
-    price: "$90",
-    period: "per day",
     popular: true,
     features: [
       "Brand new vehicle",
@@ -38,8 +35,6 @@ const pricingPlans = [
   {
     id: 3,
     vehicle: "Honda STEPWGN Air",
-    price: "$110",
-    period: "per day",
     popular: false,
     features: [
       "Premium luxury vehicle",
@@ -59,10 +54,10 @@ const PricingSection = () => {
     <section id="pricing" className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-3 text-center text-3xl font-bold md:text-4xl">
-          Competitive Leasing Pricing
+          Our Premium 6-Seater Fleet
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-xl text-gray-600">
-          Lowest rates in Singapore guaranteed. No hidden fees, transparent pricing.
+          High-quality vehicles designed for comfort and efficiency
         </p>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -80,11 +75,6 @@ const PricingSection = () => {
               </CardHeader>
               
               <CardContent className="flex-grow pt-6">
-                <div className="mb-6 text-center">
-                  <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="ml-2 text-gray-500">{plan.period}</span>
-                </div>
-                
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
@@ -100,7 +90,7 @@ const PricingSection = () => {
                   variant={plan.popular ? "default" : "outline"}
                   className={`w-full ${plan.popular ? 'bg-veep-orange hover:bg-veep-orange-dark' : 'border-veep-orange text-veep-orange hover:bg-veep-orange hover:text-white'}`}
                 >
-                  Get Started
+                  View Details
                 </Button>
               </CardFooter>
             </Card>
@@ -108,32 +98,27 @@ const PricingSection = () => {
         </div>
 
         <div className="mt-12 rounded-lg bg-gray-50 p-6 shadow-sm">
-          <h3 className="mb-4 text-center text-xl font-bold">Additional Information</h3>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
-              <h4 className="mb-2 font-semibold">Leasing Terms:</h4>
-              <ul className="space-y-1 pl-5 list-disc">
-                <li>Minimum lease period: 6 months</li>
-                <li>Weekly, bi-weekly, or monthly payment options</li>
-                <li>Security deposit: 2 weeks of rental</li>
-                <li>Early termination fee applies</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-2 font-semibold">What's Included:</h4>
+              <h4 className="mb-2 font-semibold">Vehicle Benefits:</h4>
               <ul className="space-y-1 pl-5 list-disc">
                 <li>Comprehensive insurance</li>
                 <li>Regular maintenance services</li>
-                <li>Road tax</li>
+                <li>Road tax included</li>
                 <li>24/7 roadside assistance</li>
                 <li>Replacement vehicle during servicing</li>
               </ul>
             </div>
-          </div>
-          <div className="mt-4 text-center">
-            <p className="text-sm text-gray-500">
-              *Prices listed are starting rates. Contact us for detailed quotations and special promotions.
-            </p>
+            <div>
+              <h4 className="mb-2 font-semibold">Additional Support:</h4>
+              <ul className="space-y-1 pl-5 list-disc">
+                <li>Dedicated support team</li>
+                <li>Flexible leasing options</li>
+                <li>No hidden fees</li>
+                <li>Driver benefits package</li>
+                <li>Quick onboarding process</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -142,3 +127,4 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
+
