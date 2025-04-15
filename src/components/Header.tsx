@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import Logo from "/veep-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,11 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold text-veep-orange">VEEP</span>
+            <img 
+              src={Logo} 
+              alt="VEEP Logo" 
+              className="h-10 w-auto object-contain"
+            />
           </a>
         </div>
 
@@ -40,7 +45,6 @@ const Header = () => {
           </Button>
         </nav>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="absolute left-0 right-0 top-full animate-fade-in bg-white shadow-md md:hidden">
             <div className="container mx-auto flex flex-col space-y-4 px-4 py-4">
