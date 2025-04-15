@@ -80,7 +80,7 @@ const VehicleShowcase = () => {
                       alt={vehicle.name} 
                       className={`h-full w-full object-contain transform transition-transform duration-[3000ms] ${
                         vehicle.name === 'Toyota Noah' ? 'scale-125' : 
-                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-85 hover:animate-breathe' : 
+                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-75' : 
                         vehicle.name === 'Honda Spada' ? 'scale-110' : 
                         'scale-100'
                       }`}
