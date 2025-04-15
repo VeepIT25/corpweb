@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import LeadForm from "@/components/LeadForm";
@@ -70,7 +71,12 @@ const Index = () => {
             Contact us today to learn more about our leasing options and take the first step towards maximizing your earning potential.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <a href="tel:+6561234567" className="rounded-md bg-white px-8 py-3 font-medium text-veep-orange hover:bg-gray-100">
+            <a 
+              href="https://wa.me/+6589556969" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="rounded-md bg-white px-8 py-3 font-medium text-veep-orange hover:bg-gray-100"
+            >
               Call Us Now
             </a>
             <a href="#vehicles" className="rounded-md border-2 border-white bg-transparent px-8 py-3 font-medium text-white hover:bg-white hover:text-veep-orange">
@@ -86,3 +92,4 @@ const Index = () => {
 };
 
 export default Index;
+
