@@ -23,12 +23,26 @@
     
     <link rel="icon" href="/lovable-uploads/708235b1-db79-41f0-af3f-98ccb3dc7ec4.png" type="image/png">
     <script src="https://cdn.pagesense.io/js/veeppteltd/d3f5477026c6481da61bcb01e4351597.js"></script>
+    <style>
+      @media (max-width: 768px) {
+        #gpt-engineer-tag {
+          display: none !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script>
+      // Check if device is mobile
+      if (window.innerWidth > 768) {
+        const script = document.createElement('script');
+        script.src = "https://cdn.gpteng.co/gptengineer.js";
+        script.type = "module";
+        document.body.appendChild(script);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
