@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import LeadForm from "@/components/LeadForm";
@@ -6,6 +7,7 @@ import VehicleShowcase from "@/components/VehicleShowcase";
 import ComparisonTable from "@/components/ComparisonTable";
 import WorkshopSection from "@/components/WorkshopSection";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -88,6 +90,7 @@ const Index = () => {
       </section>
       
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
