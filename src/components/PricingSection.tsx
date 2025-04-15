@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -38,7 +37,7 @@ const pricingPlans = [
   },
   {
     id: 3,
-    vehicle: "Toyota Alphard",
+    vehicle: "Honda STEPWGN Air",
     price: "$110",
     period: "per day",
     popular: false,

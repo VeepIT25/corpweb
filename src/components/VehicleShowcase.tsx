@@ -37,7 +37,7 @@ const vehicles = [
   },
   {
     id: 3,
-    name: "Honda Air",
+    name: "Honda STEPWGN Air", // Updated name here
     image: "/lovable-uploads/38fd4da8-119e-4379-b692-6414676865c0.png",
     description: "Innovative and spacious 6-seater with modern design and premium features.",
     features: ["6 Seats", "Modern Design", "Advanced Safety", "Comfort-Driven"],
