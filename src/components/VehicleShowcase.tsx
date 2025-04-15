@@ -19,7 +19,7 @@ const vehicles = [
       fuelType: "Hybrid",
       year: 2023
     },
-    best: false
+    best: false // Keeping this field in case it's used elsewhere, but removing the badge rendering
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const vehicles = [
       fuelType: "Gasoline",
       year: 2023
     },
-    best: true
+    best: false
   },
   {
     id: 3,
@@ -87,11 +87,7 @@ const VehicleShowcase = () => {
                     />
                   </div>
                 </AspectRatio>
-                {vehicle.best && (
-                  <Badge className="absolute right-3 top-3 bg-veep-orange">
-                    Most Popular
-                  </Badge>
-                )}
+                
               </div>
               
               <CardHeader className="flex-none space-y-2">
