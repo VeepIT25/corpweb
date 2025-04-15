@@ -1,5 +1,4 @@
-
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,17 +11,21 @@ const Footer = () => {
               Singapore's premier 6-seater leasing company offering the lowest rates in the market.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 transition-colors hover:text-white">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61575185936017" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 transition-colors hover:text-white"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white">
+              <a 
+                href="https://www.instagram.com/veep.sg" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 transition-colors hover:text-white"
+              >
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 transition-colors hover:text-white">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
