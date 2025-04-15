@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -77,7 +78,7 @@ const VehicleDetail = () => {
                 <img 
                   src={vehicle.mainImage} 
                   alt={vehicle.name}
-                  className="object-contain w-full h-full transform scale-150"
+                  className="object-contain w-full h-full transform scale-125" // Reduced back to 125 for consistency
                 />
               </div>
             </div>
@@ -146,3 +147,4 @@ const VehicleDetail = () => {
 };
 
 export default VehicleDetail;
+
