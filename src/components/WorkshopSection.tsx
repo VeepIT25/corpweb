@@ -1,4 +1,3 @@
-
 import { MapPin, Clock, Headphones } from "lucide-react";
 
 const WorkshopSection = () => {
@@ -8,9 +7,6 @@ const WorkshopSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Our Workshop
         </h2>
-        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Located in the heart of Sin Ming, our state-of-the-art workshop is equipped to handle all your vehicle maintenance needs.
-        </p>
 
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="bg-white p-8 rounded-2xl shadow-lg">
