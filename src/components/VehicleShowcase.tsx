@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,7 +23,7 @@ const vehicles = [
   {
     id: 2,
     name: "Honda Spada",
-    image: "https://images.unsplash.com/photo-1631385058128-f5c00d14e037?q=80&w=800&auto=format&fit=crop",
+    image: "/lovable-uploads/3a6f7227-dfcc-4a2f-871c-b0b7f7c1dcf1.png",
     description: "Comfort meets style in this premium 6-seater with excellent fuel economy.",
     features: ["6 Seats", "Premium Interior", "Fuel Efficient", "Excellent Comfort"],
     color: "Black colour available",
@@ -68,7 +67,7 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative w-full p-8"> {/* Increased padding from p-6 to p-8 */}
+              <div className="relative w-full p-8">
                 <AspectRatio ratio={16 / 9} className="relative">
                   <div className="absolute inset-0 flex items-center justify-center p-4">
                     <img 
@@ -139,4 +138,3 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
-

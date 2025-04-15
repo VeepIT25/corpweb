@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,7 +23,7 @@ const vehicles = [
   {
     id: 2,
     name: "Honda Spada",
-    image: "https://images.unsplash.com/photo-1631385058128-f5c00d14e037?q=80&w=800&auto=format&fit=crop",
+    image: "/lovable-uploads/3a6f7227-dfcc-4a2f-871c-b0b7f7c1dcf1.png",
     description: "Premium comfort meets style in this elegant 6-seater vehicle.",
     features: ["Premium Interior", "Advanced Safety", "Smooth Ride", "Excellent Comfort"],
     specifications: {
