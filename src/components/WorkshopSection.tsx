@@ -1,3 +1,4 @@
+
 import { MapPin, Clock, Headphones } from "lucide-react";
 
 const WorkshopSection = () => {
@@ -30,7 +31,7 @@ const WorkshopSection = () => {
                   <Headphones className="w-6 h-6 text-veep-orange" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-xl mb-2">24/7 Customer Support</h4>
+                  <h4 className="font-semibold text-xl mb-2">24/7 Towing Service</h4>
                   <p className="text-gray-600">
                     Round-the-clock assistance whenever you need it. Our dedicated team is always ready to help you.
                   </p>
@@ -42,9 +43,9 @@ const WorkshopSection = () => {
                   <MapPin className="w-6 h-6 text-veep-orange" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-xl mb-2">Strategic Location</h4>
+                  <h4 className="font-semibold text-xl mb-2">Conveniently Located</h4>
                   <p className="text-gray-600">
-                    Conveniently located at 385 Sin Ming Dr, Singapore. Easy access and ample parking space available.
+                    Located at 385 Sin Ming Dr, Singapore. Easy access and ample parking space available.
                   </p>
                 </div>
               </div>
