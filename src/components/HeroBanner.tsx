@@ -17,8 +17,8 @@ const HeroBanner = () => {
       
       {/* Using a background image for the hero section */}
       <img 
-        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-        alt="Luxury car background" 
+        src="/lovable-uploads/ec4680db-bb4f-467d-89c4-47fdfc49e90b.png" 
+        alt="Honda steering wheel close-up" 
         className="absolute inset-0 h-full w-full object-cover opacity-70"
         onError={(e) => {
           console.error("Background image load error:", e);
