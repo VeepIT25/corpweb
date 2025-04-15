@@ -81,6 +81,7 @@ const VehicleShowcase = () => {
                       className={`h-full w-full object-contain transform ${
                         vehicle.name === 'Toyota Noah' ? 'scale-125' : 
                         vehicle.name === 'Honda STEPWGN Air' ? 'scale-90 -translate-x-2' : 
+                        vehicle.name === 'Honda Spada' ? 'scale-110' : 
                         'scale-100'
                       }`}
                     />
