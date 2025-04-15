@@ -33,7 +33,7 @@ const vehicles = [
       fuelType: "Gasoline",
       year: 2023
     },
-    best: true // Changed to true to add "Most Popular" badge
+    best: true
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="max-w-[160%] max-h-[160%] object-contain" 
+                      className={`max-w-[160%] max-h-[160%] object-contain ${vehicle.name === 'Honda STEPWGN Air' ? 'max-w-[100%] max-h-[100%]' : ''}`}
                     />
                   </div>
                 </AspectRatio>
