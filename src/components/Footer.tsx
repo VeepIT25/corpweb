@@ -78,30 +78,26 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
-          <div>
-            <h3 className="mb-4 text-xl font-bold">Business Hours</h3>
-            <ul className="space-y-2">
-              <li>Monday - Friday: 9am - 6pm</li>
-              <li>Saturday: Closed</li>
-              <li>Sunday: Closed</li>
-              <li>Public Holidays: Closed</li>
-            </ul>
-            <p className="mt-4 text-sm text-gray-400">
-              24/7 Support Available for Existing Customers
-            </p>
-          </div>
-        </div>
         
-        <div className="mt-8 border-t border-gray-800 pt-6">
-          <div className="flex flex-col items-center justify-between md:flex-row">
-            <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} VEEP. All rights reserved.
-            </p>
-            <p className="mt-2 text-gray-400 md:mt-0">
-              Designed & Developed with ❤️ in Singapore
-            </p>
-          </div>
+        <div>
+          <h3 className="mb-4 text-xl font-bold">Business Hours</h3>
+          <ul className="space-y-2">
+            <li>Monday - Friday: 9am - 6pm</li>
+            <li>Saturday: Closed</li>
+            <li>Sunday: Closed</li>
+            <li>Public Holidays: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="mt-8 border-t border-gray-800 pt-6">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <p className="text-gray-400">
+            &copy; {new Date().getFullYear()} VEEP. All rights reserved.
+          </p>
+          <p className="mt-2 text-gray-400 md:mt-0">
+            Designed & Developed with ❤️ in Singapore
+          </p>
         </div>
       </div>
     </footer>
