@@ -40,26 +40,6 @@ const BrandStory = () => {
             </p>
           </div>
         </div>
-
-        <div className="mt-16 rounded-lg bg-white p-6 shadow-md md:p-8">
-          <h3 className="mb-6 text-center text-2xl font-bold">The VEEP Difference</h3>
-          
-          <div className="space-y-4">
-            {[
-              "Premium new vehicles with full manufacturer warranty",
-              "Competitive pricing - lowest in Singapore",
-              "Islandwide workshop network with minimal downtime",
-              "Comprehensive driver benefits package",
-              "Flexible leasing terms to suit your needs",
-              "Higher earning potential with multi-purpose vehicles"
-            ].map((item, index) => (
-              <div key={index} className="flex items-start">
-                <CheckCircle2 className="mr-2 h-6 w-6 flex-shrink-0 text-veep-orange" />
-                <p className="text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
