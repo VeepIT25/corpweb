@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -67,13 +66,13 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative w-full">
+              <div className="relative w-full p-4">
                 <AspectRatio ratio={16 / 9} className="relative">
-                  <div className="absolute inset-0 w-full h-full p-0">
+                  <div className="absolute inset-0 flex items-center justify-center p-4">
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="h-full w-full object-cover object-center"
+                      className="max-w-full max-h-full object-contain"
                     />
                   </div>
                 </AspectRatio>
@@ -138,4 +137,3 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
-
