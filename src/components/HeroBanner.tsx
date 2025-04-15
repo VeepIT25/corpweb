@@ -1,6 +1,15 @@
+
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 const HeroBanner = () => {
+  const scrollToVehicles = () => {
+    const vehiclesSection = document.getElementById('vehicles');
+    if (vehiclesSection) {
+      vehiclesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative overflow-hidden" style={{ height: "600px" }}>
       <div className="absolute inset-0 bg-gray-700">
@@ -28,7 +37,10 @@ const HeroBanner = () => {
             Singapore's premier 6-seater leasing company offering the lowest rates in the market.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Button className="bg-veep-orange px-8 py-6 text-lg text-white hover:bg-veep-orange-dark">
+            <Button 
+              onClick={scrollToVehicles} 
+              className="bg-veep-orange px-8 py-6 text-lg text-white hover:bg-veep-orange-dark"
+            >
               View Our Fleet
             </Button>
             <Button 
