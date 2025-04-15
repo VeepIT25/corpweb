@@ -5,20 +5,17 @@ const HeroBanner = () => {
   return (
     <div className="relative overflow-hidden" style={{ height: "600px" }}>
       <div className="absolute inset-0 bg-gray-700">
-        {/* Fallback background color if video doesn't load */}
+        {/* Fallback background color */}
       </div>
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline 
-        className="absolute inset-0 h-full w-full object-cover"
-        onError={(e) => console.error("Video load error:", e)}
-      >
-        <source src="/car-interior.mp4" type="video/mp4" />
-        {/* Fallback message if video doesn't load */}
-        Your browser does not support the video tag.
-      </video>
+      
+      {/* Using a static image instead of video that's causing errors */}
+      <img 
+        src="/lovable-uploads/6be23c24-5eba-4343-a7dd-c6301c521bc6.png" 
+        alt="VEEP Background" 
+        className="absolute inset-0 h-full w-full object-cover opacity-30"
+        onError={(e) => console.error("Background image load error:", e)}
+      />
+      
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-4 py-16 md:px-8">
         <div className="max-w-3xl text-white">

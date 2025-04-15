@@ -14,7 +14,10 @@ const Header = () => {
               src="/lovable-uploads/6be23c24-5eba-4343-a7dd-c6301c521bc6.png" 
               alt="VEEP Logo" 
               className="h-10 w-auto object-contain" 
-              onError={(e) => console.error("Image load error:", e)}
+              onError={(e) => {
+                console.error("Logo image load error:", e);
+                e.currentTarget.src = "/placeholder.svg"; // Fallback to placeholder
+              }}
             />
           </a>
         </div>
