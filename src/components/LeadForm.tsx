@@ -9,12 +9,10 @@ const LeadForm = () => {
         id="zoho-form"
         className="w-full"
       >
-        {/* Replace the src URL below with your actual Zoho form embed URL */}
         <iframe
-          src="YOUR_ZOHO_FORM_URL_HERE"
-          style={{ border: "none" }}
-          className="w-full min-h-[500px]"
-          title="VEEP Lead Form"
+          src="https://forms.zohopublic.com/ainveep1/form/ContactUsWebsite/formperma/_P6uBZr8eyB0YdjZWFQMIkWRNjh9JcsV71A_Tnwyio0"
+          className="w-full min-h-[500px] border-none"
+          title="VEEP Contact Form"
         />
       </div>
     </div>
