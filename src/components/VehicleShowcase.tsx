@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -67,7 +68,7 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative w-full p-6">
+              <div className="relative w-full p-8"> {/* Increased padding from p-6 to p-8 */}
                 <AspectRatio ratio={16 / 9} className="relative">
                   <div className="absolute inset-0 flex items-center justify-center p-4">
                     <img 
