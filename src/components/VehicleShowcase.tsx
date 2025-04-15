@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -72,13 +73,13 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className={`relative w-full p-4 ${vehicle.name === 'Honda STEPWGN Air' ? 'p-8' : ''}`}>
+              <div className="relative w-full p-4">
                 <AspectRatio ratio={16 / 9} className="relative">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="h-full w-full transform object-contain scale-125 transition-transform duration-1000 ease-in-out hover:scale-[1.35]"
+                      className="h-full w-full object-contain transform scale-125 transition-transform duration-1000 ease-in-out hover:scale-[1.35]"
                     />
                   </div>
                 </AspectRatio>
@@ -145,3 +146,4 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
+
