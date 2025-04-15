@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -78,7 +79,9 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="h-full w-full object-contain transform scale-100"
+                      className={`h-full w-full object-contain transform ${
+                        vehicle.name === 'Toyota Noah' ? 'scale-125' : 'scale-100'
+                      }`}
                     />
                   </div>
                 </AspectRatio>
