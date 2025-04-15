@@ -78,7 +78,7 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className="w-full h-full object-contain transform scale-125"
+                      className="h-full w-full transform object-contain scale-125 transition-transform duration-1000 ease-in-out hover:scale-[1.35]"
                     />
                   </div>
                 </AspectRatio>
