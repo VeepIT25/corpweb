@@ -7,6 +7,8 @@ import Logo from "/veep-logo.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  console.log("Logo import:", Logo); // Debug logo import
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
@@ -16,6 +18,7 @@ const Header = () => {
               src={Logo} 
               alt="VEEP Logo" 
               className="h-10 w-auto object-contain"
+              onError={(e) => console.error("Image load error:", e)} // Added error logging
             />
           </a>
         </div>
