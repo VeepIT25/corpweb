@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -66,13 +67,15 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative">
-                <AspectRatio ratio={16 / 9}>
-                  <img 
-                    src={vehicle.image} 
-                    alt={vehicle.name} 
-                    className="h-full w-full object-cover object-center"
-                  />
+              <div className="relative w-full">
+                <AspectRatio ratio={16 / 9} className="relative">
+                  <div className="absolute inset-0 w-full h-full p-0">
+                    <img 
+                      src={vehicle.image} 
+                      alt={vehicle.name} 
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
                 </AspectRatio>
                 {vehicle.best && (
                   <Badge className="absolute right-3 top-3 bg-veep-orange">
@@ -81,7 +84,7 @@ const VehicleShowcase = () => {
                 )}
               </div>
               
-              <CardHeader className="space-y-2">
+              <CardHeader className="flex-none space-y-2">
                 <CardTitle className="text-2xl font-bold">{vehicle.name}</CardTitle>
                 <CardDescription className="text-base">
                   {vehicle.description}
@@ -121,7 +124,7 @@ const VehicleShowcase = () => {
                 </div>
               </CardContent>
               
-              <CardFooter className="pt-6">
+              <CardFooter className="flex-none pt-6">
                 <Button className="w-full bg-veep-orange hover:bg-veep-orange-dark">
                   View Details
                 </Button>
@@ -135,3 +138,4 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
+
