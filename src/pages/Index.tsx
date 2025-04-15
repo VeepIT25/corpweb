@@ -1,11 +1,9 @@
-
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import LeadForm from "@/components/LeadForm";
 import BrandStory from "@/components/BrandStory";
 import VehicleShowcase from "@/components/VehicleShowcase";
 import ComparisonTable from "@/components/ComparisonTable";
-import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -62,8 +60,6 @@ const Index = () => {
       <ComparisonTable />
       
       <BrandStory />
-      
-      <PricingSection />
       
       <section className="bg-veep-orange py-16">
         <div className="container mx-auto px-4 text-center text-white">
