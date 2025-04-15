@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -51,6 +52,10 @@ const vehicles = [
 ];
 
 const VehicleShowcase = () => {
+  const getVehicleSlug = (name: string) => {
+    return name.toLowerCase().replace(/ /g, '-');
+  };
+
   return (
     <section id="vehicles" className="py-16">
       <div className="container mx-auto px-4">
@@ -125,9 +130,11 @@ const VehicleShowcase = () => {
               </CardContent>
               
               <CardFooter className="flex-none pt-6">
-                <Button className="w-full bg-veep-orange hover:bg-veep-orange-dark">
-                  View Details
-                </Button>
+                <Link to={`/vehicle/${getVehicleSlug(vehicle.name)}`} className="w-full">
+                  <Button className="w-full bg-veep-orange hover:bg-veep-orange-dark">
+                    View Details
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
