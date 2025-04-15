@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -13,17 +12,14 @@ const LeadForm = () => {
       if (!iframe) return;
 
       try {
-        // Check if the loaded URL contains "formsubmit"
         if (iframe.contentWindow?.location.href.includes("formsubmit")) {
           toast({
             title: "Success!",
             description: "Your message has been sent successfully.",
           });
-          // Reset the form by reloading it
           setKey(prev => prev + 1);
         }
 
-        // Apply custom styles to the iframe content
         const iframeDoc = iframe.contentWindow?.document;
         if (iframeDoc) {
           const style = iframeDoc.createElement('style');
@@ -91,11 +87,23 @@ const LeadForm = () => {
             .zf-salutation {
               display: none !important;
             }
+            .zf-poweredBy,
+            .zf-frmBottomIcons,
+            .zf-information,
+            .zf-descFld {
+              display: none !important;
+            }
+            .zf-templateContainer {
+              margin-bottom: 0 !important;
+            }
+            .zf-submitWrapper {
+              margin: 0 !important;
+              padding: 0 !important;
+            }
           `;
           iframeDoc.head.appendChild(style);
         }
       } catch (e) {
-        // Cross-origin errors will be caught here, which is expected
         console.log("Cross-origin frame access");
       }
     };
