@@ -15,11 +15,13 @@ const HeroBanner = () => {
         {/* Fallback background color */}
       </div>
       
-      {/* Using a background image for the hero section */}
       <img 
         src="/lovable-uploads/ec4680db-bb4f-467d-89c4-47fdfc49e90b.png" 
         alt="Honda steering wheel close-up" 
         className="absolute inset-0 h-full w-full object-cover opacity-70"
+        loading="eager"
+        decoding="async"
+        fetchPriority="high"
         onError={(e) => {
           console.error("Background image load error:", e);
           e.currentTarget.style.display = "none";
@@ -57,3 +59,4 @@ const HeroBanner = () => {
 };
 
 export default HeroBanner;
+
