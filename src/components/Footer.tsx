@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -72,15 +71,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin className="mt-0.5 mr-2 h-5 w-5 flex-shrink-0 text-veep-orange" />
-                <span>123 Orchard Road, #01-01<br />Singapore 123456</span>
+                <span>69 Loyang Drive<br />Singapore 508958</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 flex-shrink-0 text-veep-orange" />
-                <a href="tel:+6561234567" className="hover:text-veep-orange">+65 6123 4567</a>
+                <a href="tel:+6589556969" className="hover:text-veep-orange">+65 89556969</a>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 flex-shrink-0 text-veep-orange" />
-                <a href="mailto:info@veep.sg" className="hover:text-veep-orange">info@veep.sg</a>
+                <a href="mailto:sales@veep.sg" className="hover:text-veep-orange">sales@veep.sg</a>
               </div>
             </div>
           </div>
@@ -88,10 +87,10 @@ const Footer = () => {
           <div>
             <h3 className="mb-4 text-xl font-bold">Business Hours</h3>
             <ul className="space-y-2">
-              <li>Monday - Friday: 9am - 8pm</li>
-              <li>Saturday: 10am - 6pm</li>
-              <li>Sunday: 11am - 4pm</li>
-              <li>Public Holidays: 11am - 4pm</li>
+              <li>Monday - Friday: 9am - 6pm</li>
+              <li>Saturday: Closed</li>
+              <li>Sunday: Closed</li>
+              <li>Public Holidays: Closed</li>
             </ul>
             <p className="mt-4 text-sm text-gray-400">
               24/7 Support Available for Existing Customers
