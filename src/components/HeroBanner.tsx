@@ -1,15 +1,9 @@
-
 import { Button } from "@/components/ui/button";
-
 const HeroBanner = () => {
-  return (
-    <div
-      className="relative overflow-hidden bg-cover bg-center"
-      style={{
-        backgroundImage: "url(https://images.unsplash.com/photo-1581092919535-7146ff431cf2?q=80&w=2000&auto=format&fit=crop)",
-        height: "600px",
-      }}
-    >
+  return <div className="relative overflow-hidden bg-cover bg-center" style={{
+    backgroundImage: "url(https://images.unsplash.com/photo-1581092919535-7146ff431cf2?q=80&w=2000&auto=format&fit=crop)",
+    height: "600px"
+  }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-4 py-16 md:px-8">
         <div className="max-w-3xl text-white">
@@ -23,17 +17,12 @@ const HeroBanner = () => {
             <Button className="bg-veep-orange px-8 py-6 text-lg text-white hover:bg-veep-orange-dark">
               View Our Fleet
             </Button>
-            <Button
-              variant="outline"
-              className="border-white px-8 py-6 text-lg text-white hover:bg-white hover:text-veep-orange"
-            >
+            <Button variant="outline" className="border-white px-8 py-6 text-lg text-orange hover:bg-white hover:text-veep-orange">
               Get Started Today
             </Button>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroBanner;
