@@ -39,7 +39,10 @@ const Header = () => {
           <a href="#brand-story" className="text-gray-700 transition-colors hover:text-veep-orange">
             Our Story
           </a>
-          <Button className="flex items-center gap-2 bg-veep-orange text-white hover:bg-veep-orange-dark">
+          <Button 
+            className="flex items-center gap-2 bg-veep-orange text-white hover:bg-veep-orange-dark"
+            onClick={() => window.open('https://wa.me/6589556969', '_blank')}
+          >
             <Phone size={18} />
             Contact Us
           </Button>
@@ -60,7 +63,13 @@ const Header = () => {
               <a href="#brand-story" className="py-2 text-gray-700 transition-colors hover:text-veep-orange" onClick={() => setIsMenuOpen(false)}>
                 Our Story
               </a>
-              <Button className="flex w-full items-center justify-center gap-2 bg-veep-orange text-white hover:bg-veep-orange-dark" onClick={() => setIsMenuOpen(false)}>
+              <Button 
+                className="flex w-full items-center justify-center gap-2 bg-veep-orange text-white hover:bg-veep-orange-dark" 
+                onClick={() => {
+                  window.open('https://wa.me/6589556969', '_blank');
+                  setIsMenuOpen(false);
+                }}
+              >
                 <Phone size={18} />
                 Contact Us
               </Button>
