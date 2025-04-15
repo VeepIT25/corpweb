@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, CarFront, Fuel, Calendar } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const vehicles = [
   {
@@ -62,53 +62,66 @@ const VehicleShowcase = () => {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {vehicles.map((vehicle) => (
-            <Card key={vehicle.id} className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange">
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={vehicle.image} 
-                  alt={vehicle.name} 
-                  className="w-full h-full object-cover object-center"
-                />
+            <Card 
+              key={vehicle.id} 
+              className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
+            >
+              <div className="relative">
+                <AspectRatio ratio={16 / 9}>
+                  <img 
+                    src={vehicle.image} 
+                    alt={vehicle.name} 
+                    className="h-full w-full object-cover object-center"
+                  />
+                </AspectRatio>
                 {vehicle.best && (
-                  <Badge className="absolute right-3 top-3 bg-veep-orange">Most Popular</Badge>
+                  <Badge className="absolute right-3 top-3 bg-veep-orange">
+                    Most Popular
+                  </Badge>
                 )}
               </div>
               
-              <CardHeader>
-                <CardTitle className="text-xl">{vehicle.name}</CardTitle>
-                <CardDescription>{vehicle.description}</CardDescription>
+              <CardHeader className="space-y-2">
+                <CardTitle className="text-2xl font-bold">{vehicle.name}</CardTitle>
+                <CardDescription className="text-base">
+                  {vehicle.description}
+                </CardDescription>
               </CardHeader>
               
-              <CardContent className="flex-grow">
-                <div className="mb-4 grid grid-cols-2 gap-2">
-                  <div className="flex items-center">
-                    <Users className="mr-2 h-5 w-5 text-veep-orange" />
-                    <span>{vehicle.specifications.seats} Seats</span>
+              <CardContent className="flex-grow space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-2">
+                    <Users className="h-5 w-5 text-veep-orange" />
+                    <span className="text-sm">{vehicle.specifications.seats} Seats</span>
                   </div>
-                  <div className="flex items-center">
-                    <Fuel className="mr-2 h-5 w-5 text-veep-orange" />
-                    <span>{vehicle.specifications.fuelType}</span>
+                  <div className="flex items-center space-x-2">
+                    <Fuel className="h-5 w-5 text-veep-orange" />
+                    <span className="text-sm">{vehicle.specifications.fuelType}</span>
                   </div>
-                  <div className="flex items-center">
-                    <CarFront className="mr-2 h-5 w-5 text-veep-orange" />
-                    <span>{vehicle.color}</span>
+                  <div className="flex items-center space-x-2">
+                    <CarFront className="h-5 w-5 text-veep-orange" />
+                    <span className="text-sm">{vehicle.color}</span>
                   </div>
-                  <div className="flex items-center">
-                    <Calendar className="mr-2 h-5 w-5 text-veep-orange" />
-                    <span>{vehicle.specifications.year}</span>
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="h-5 w-5 text-veep-orange" />
+                    <span className="text-sm">{vehicle.specifications.year}</span>
                   </div>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
                   {vehicle.features.map((feature, index) => (
-                    <Badge key={index} variant="secondary" className="bg-gray-100">
+                    <Badge 
+                      key={index} 
+                      variant="secondary" 
+                      className="bg-gray-100 text-sm"
+                    >
                       {feature}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
               
-              <CardFooter>
+              <CardFooter className="pt-6">
                 <Button className="w-full bg-veep-orange hover:bg-veep-orange-dark">
                   View Details
                 </Button>
