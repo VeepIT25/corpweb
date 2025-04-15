@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroBanner = () => {
+  const isMobile = useIsMobile();
+  
   const scrollToVehicles = () => {
     const vehiclesSection = document.getElementById('vehicles');
     if (vehiclesSection) {
@@ -21,7 +24,8 @@ const HeroBanner = () => {
         className="absolute inset-0 h-full w-full object-cover opacity-70"
         loading="eager"
         decoding="async"
-        fetchPriority="high"
+        // Use lowercase for HTML attributes to avoid React warnings
+        fetchpriority="high"
         onError={(e) => {
           console.error("Background image load error:", e);
           e.currentTarget.style.display = "none";
@@ -59,4 +63,3 @@ const HeroBanner = () => {
 };
 
 export default HeroBanner;
-

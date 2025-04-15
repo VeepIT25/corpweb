@@ -28,6 +28,10 @@
         #gpt-engineer-tag {
           display: none !important;
         }
+        /* Additional targeting for Lovable badge elements */
+        .lovable-badge, .gpt-engineer-badge, [id*="lovable"], [id*="gpt-engineer"] {
+          display: none !important;
+        }
       }
     </style>
   </head>
@@ -42,6 +46,24 @@
         script.type = "module";
         document.body.appendChild(script);
       }
+      
+      // Add listener to handle resize events and remove tag if window is resized to mobile width
+      window.addEventListener('resize', () => {
+        const existingScript = document.querySelector('script[src="https://cdn.gpteng.co/gptengineer.js"]');
+        const tag = document.getElementById('gpt-engineer-tag');
+        
+        if (window.innerWidth <= 768) {
+          // Remove script and tag if window becomes mobile size
+          if (existingScript) existingScript.remove();
+          if (tag) tag.style.display = 'none';
+        } else if (!existingScript) {
+          // Add script back if window becomes desktop size
+          const script = document.createElement('script');
+          script.src = "https://cdn.gpteng.co/gptengineer.js";
+          script.type = "module";
+          document.body.appendChild(script);
+        }
+      });
     </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
