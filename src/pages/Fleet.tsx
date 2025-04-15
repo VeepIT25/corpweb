@@ -38,17 +38,17 @@ const vehicles = [
   },
   {
     id: 3,
-    name: "Toyota Alphard",
-    image: "https://images.unsplash.com/photo-1619405399517-d7fce0f13302?q=80&w=800&auto=format&fit=crop",
-    description: "Luxury redefined with premium features and exceptional comfort.",
-    features: ["Luxury Interior", "Premium Sound", "Advanced Safety", "Executive Style"],
+    name: "Honda Air",
+    image: "/lovable-uploads/38fd4da8-119e-4379-b692-6414676865c0.png",
+    description: "Innovative and spacious 6-seater with modern design and premium features.",
+    features: ["Modern Design", "Advanced Safety", "Comfort-Driven", "Spacious Interior"],
     specifications: {
       seats: 6,
       fuelType: "Hybrid",
-      year: 2023,
+      year: 2024,
       transmission: "Automatic",
-      engine: "2.5L",
-      fuelEconomy: "14km/L"
+      engine: "2.2L",
+      fuelEconomy: "18km/L"
     }
   }
 ];

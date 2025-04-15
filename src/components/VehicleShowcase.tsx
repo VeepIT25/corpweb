@@ -35,15 +35,15 @@ const vehicles = [
   },
   {
     id: 3,
-    name: "Toyota Alphard",
-    image: "https://images.unsplash.com/photo-1619405399517-d7fce0f13302?q=80&w=800&auto=format&fit=crop",
-    description: "Luxury 6-seater with premium features for an exceptional riding experience.",
-    features: ["6 Seats", "Luxury Interior", "Premium Features", "Executive Style"],
+    name: "Honda Air",
+    image: "/lovable-uploads/38fd4da8-119e-4379-b692-6414676865c0.png",
+    description: "Innovative and spacious 6-seater with modern design and premium features.",
+    features: ["6 Seats", "Modern Design", "Advanced Safety", "Comfort-Driven"],
     color: "Multiple Colors Available",
     specifications: {
       seats: 6,
-      fuelType: "Gasoline",
-      year: 2023
+      fuelType: "Hybrid",
+      year: 2024
     },
     best: false
   }
