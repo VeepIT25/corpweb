@@ -13,7 +13,7 @@ const vehicles = [
     image: "https://images.unsplash.com/photo-1581092919535-7146ff431cf2?q=80&w=800&auto=format&fit=crop",
     description: "A spacious and fuel-efficient 6-seater MPV perfect for families and ride-sharing.",
     features: ["6 Seats", "Fuel Efficient", "Spacious Storage", "Latest Model"],
-    color: "Multiple Colors Available",
+    color: "Black colour available",
     specifications: {
       seats: 6,
       fuelType: "Hybrid",
@@ -27,7 +27,7 @@ const vehicles = [
     image: "https://images.unsplash.com/photo-1631385058128-f5c00d14e037?q=80&w=800&auto=format&fit=crop",
     description: "Comfort meets style in this premium 6-seater with excellent fuel economy.",
     features: ["6 Seats", "Premium Interior", "Fuel Efficient", "Excellent Comfort"],
-    color: "Multiple Colors Available",
+    color: "Black colour available",
     specifications: {
       seats: 6,
       fuelType: "Gasoline",
@@ -37,11 +37,11 @@ const vehicles = [
   },
   {
     id: 3,
-    name: "Honda STEPWGN Air", // Updated name here
+    name: "Honda STEPWGN Air", 
     image: "/lovable-uploads/38fd4da8-119e-4379-b692-6414676865c0.png",
     description: "Innovative and spacious 6-seater with modern design and premium features.",
     features: ["6 Seats", "Modern Design", "Advanced Safety", "Comfort-Driven"],
-    color: "Multiple Colors Available",
+    color: "Black colour available",
     specifications: {
       seats: 6,
       fuelType: "Hybrid",
