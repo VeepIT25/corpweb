@@ -4,14 +4,20 @@ import { Button } from "@/components/ui/button";
 const HeroBanner = () => {
   return (
     <div className="relative overflow-hidden" style={{ height: "600px" }}>
+      <div className="absolute inset-0 bg-gray-700">
+        {/* Fallback background color if video doesn't load */}
+      </div>
       <video 
         autoPlay 
         muted 
         loop 
         playsInline 
         className="absolute inset-0 h-full w-full object-cover"
+        onError={(e) => console.error("Video load error:", e)}
       >
         <source src="/car-interior.mp4" type="video/mp4" />
+        {/* Fallback message if video doesn't load */}
+        Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-4 py-16 md:px-8">

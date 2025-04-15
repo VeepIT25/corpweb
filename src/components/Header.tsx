@@ -1,17 +1,21 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-import Logo from "/veep-logo.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log("Logo import:", Logo); // Debug logo import
 
   return <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <img src={Logo} alt="VEEP Logo" className="h-10 w-auto object-contain" onError={e => console.error("Image load error:", e)} // Added error logging
-          />
+            <img 
+              src="/lovable-uploads/6be23c24-5eba-4343-a7dd-c6301c521bc6.png" 
+              alt="VEEP Logo" 
+              className="h-10 w-auto object-contain" 
+              onError={(e) => console.error("Image load error:", e)}
+            />
           </a>
         </div>
 
