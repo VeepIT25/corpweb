@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,7 +19,7 @@ const vehicles = [
       fuelType: "Hybrid",
       year: 2023
     },
-    best: true
+    best: false
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const vehicles = [
       fuelType: "Gasoline",
       year: 2023
     },
-    best: false
+    best: true // Changed to true to add "Most Popular" badge
   },
   {
     id: 3,
