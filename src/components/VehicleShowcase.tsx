@@ -63,11 +63,11 @@ const VehicleShowcase = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {vehicles.map((vehicle) => (
             <Card key={vehicle.id} className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange">
-              <div className="relative">
+              <div className="relative h-48 overflow-hidden">
                 <img 
                   src={vehicle.image} 
                   alt={vehicle.name} 
-                  className="h-48 w-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
                 {vehicle.best && (
                   <Badge className="absolute right-3 top-3 bg-veep-orange">Most Popular</Badge>
