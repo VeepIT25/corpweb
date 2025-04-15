@@ -78,7 +78,7 @@ const VehicleShowcase = () => {
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className={`h-full w-full object-contain transform transition-transform duration-[2000ms] hover:scale-110 ${
+                      className={`h-full w-full object-contain transform transition-transform duration-[3000ms] hover:scale-105 ${
                         vehicle.name === 'Toyota Noah' ? 'scale-125' : 
                         vehicle.name === 'Honda STEPWGN Air' ? 'scale-90 -translate-x-2' : 
                         vehicle.name === 'Honda Spada' ? 'scale-110' : 
