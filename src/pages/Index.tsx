@@ -1,17 +1,16 @@
-
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import LeadForm from "@/components/LeadForm";
 import BrandStory from "@/components/BrandStory";
 import VehicleShowcase from "@/components/VehicleShowcase";
 import ComparisonTable from "@/components/ComparisonTable";
+import WorkshopSection from "@/components/WorkshopSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      
       <HeroBanner />
       
       <section className="py-16">
@@ -62,6 +61,8 @@ const Index = () => {
       
       <ComparisonTable />
       
+      <WorkshopSection />
+      
       <section className="bg-veep-orange py-16">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
@@ -92,4 +93,3 @@ const Index = () => {
 };
 
 export default Index;
-
