@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const HeroBanner = () => {
@@ -32,7 +31,10 @@ const HeroBanner = () => {
             <Button className="bg-veep-orange px-8 py-6 text-lg text-white hover:bg-veep-orange-dark">
               View Our Fleet
             </Button>
-            <Button variant="outline" className="border-white px-8 py-6 text-lg text-orange hover:bg-white hover:text-veep-orange">
+            <Button 
+              variant="outline" 
+              className="border-white px-8 py-6 text-lg text-veep-orange hover:bg-white hover:text-veep-orange-dark"
+            >
               Get Started Today
             </Button>
           </div>
