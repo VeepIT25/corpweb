@@ -1,4 +1,5 @@
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -54,9 +55,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 transition-colors hover:text-white">
-                  Terms of Service
-                </a>
+                <Link to="/terms" className="text-gray-400 transition-colors hover:text-white">
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>
