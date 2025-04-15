@@ -67,7 +67,7 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative w-full p-4">
+              <div className={`relative w-full p-4 ${vehicle.name === 'Honda STEPWGN Air' ? 'p-8' : ''}`}>
                 <AspectRatio ratio={16 / 9} className="relative">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <img 
