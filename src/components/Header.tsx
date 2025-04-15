@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <img 
-              src="/lovable-uploads/6be23c24-5eba-4343-a7dd-c6301c521bc6.png" 
+              src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=80&q=80" 
               alt="VEEP Logo" 
               className="h-10 w-auto object-contain" 
               onError={(e) => {

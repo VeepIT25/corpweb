@@ -8,12 +8,15 @@ const HeroBanner = () => {
         {/* Fallback background color */}
       </div>
       
-      {/* Using a static image instead of video that's causing errors */}
+      {/* Using a background image for the hero section */}
       <img 
-        src="/lovable-uploads/6be23c24-5eba-4343-a7dd-c6301c521bc6.png" 
-        alt="VEEP Background" 
-        className="absolute inset-0 h-full w-full object-cover opacity-30"
-        onError={(e) => console.error("Background image load error:", e)}
+        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+        alt="Luxury car background" 
+        className="absolute inset-0 h-full w-full object-cover opacity-70"
+        onError={(e) => {
+          console.error("Background image load error:", e);
+          e.currentTarget.style.display = "none";
+        }}
       />
       
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
