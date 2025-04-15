@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { useEffect } from "react";
 
 const HeroBanner = () => {
   const scrollToVehicles = () => {
@@ -46,6 +45,7 @@ const HeroBanner = () => {
             <Button 
               variant="outline" 
               className="border-white px-8 py-6 text-lg text-veep-orange hover:bg-white hover:text-veep-orange-dark"
+              onClick={() => window.open('https://wa.me/6589556969', '_blank')}
             >
               Get Started Today
             </Button>
