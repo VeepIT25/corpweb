@@ -31,6 +31,9 @@ const LeadForm = () => {
             body {
               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
               background: transparent !important;
+              max-width: 100% !important;
+              padding: 0 !important;
+              margin: 0 !important;
             }
             .zf-tempContDiv input[type="text"],
             .zf-tempContDiv input[type="email"],
@@ -41,6 +44,7 @@ const LeadForm = () => {
               padding: 0.5rem 0.75rem !important;
               width: 100% !important;
               background-color: white !important;
+              font-size: 0.875rem !important;
             }
             .zf-submitColor {
               background-color: #da7229 !important;
@@ -50,6 +54,8 @@ const LeadForm = () => {
               border: none !important;
               cursor: pointer !important;
               transition: background-color 0.2s !important;
+              width: 100% !important;
+              margin-top: 1rem !important;
             }
             .zf-submitColor:hover {
               background-color: #b35618 !important;
@@ -58,6 +64,32 @@ const LeadForm = () => {
               padding: 0 !important;
               background: transparent !important;
               border: none !important;
+            }
+            .zf-templateWrapper {
+              padding: 0 !important;
+              max-width: 100% !important;
+            }
+            .zf-signatureField {
+              display: none !important;
+            }
+            .zf-termsMsg {
+              display: none !important;
+            }
+            .zf-template {
+              background: transparent !important;
+              max-width: 100% !important;
+            }
+            .zf-subContWrap {
+              margin: 0 !important;
+              padding: 0 !important;
+            }
+            .zf-tempContDiv label {
+              color: #374151 !important;
+              font-size: 0.875rem !important;
+              margin-bottom: 0.25rem !important;
+            }
+            .zf-salutation {
+              display: none !important;
             }
           `;
           iframeDoc.head.appendChild(style);
