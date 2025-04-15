@@ -36,9 +36,6 @@ const Header = () => {
           <a href="#why-veep" className="text-gray-700 transition-colors hover:text-veep-orange">
             Why VEEP
           </a>
-          <a href="#pricing" className="text-gray-700 transition-colors hover:text-veep-orange">
-            Pricing
-          </a>
           <a href="#brand-story" className="text-gray-700 transition-colors hover:text-veep-orange">
             Our Story
           </a>
@@ -59,9 +56,6 @@ const Header = () => {
               </a>
               <a href="#why-veep" className="py-2 text-gray-700 transition-colors hover:text-veep-orange" onClick={() => setIsMenuOpen(false)}>
                 Why VEEP
-              </a>
-              <a href="#pricing" className="py-2 text-gray-700 transition-colors hover:text-veep-orange" onClick={() => setIsMenuOpen(false)}>
-                Pricing
               </a>
               <a href="#brand-story" className="py-2 text-gray-700 transition-colors hover:text-veep-orange" onClick={() => setIsMenuOpen(false)}>
                 Our Story
