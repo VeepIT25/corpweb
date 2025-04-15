@@ -67,13 +67,13 @@ const VehicleShowcase = () => {
               key={vehicle.id} 
               className="flex h-full flex-col overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-veep-orange"
             >
-              <div className="relative w-full p-8">
+              <div className="relative w-full p-4">
                 <AspectRatio ratio={16 / 9} className="relative">
-                  <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <div className="absolute inset-0 flex items-center justify-center">
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name} 
-                      className={`max-w-[160%] max-h-[160%] object-contain ${vehicle.name === 'Honda STEPWGN Air' ? 'max-w-[100%] max-h-[100%]' : ''}`}
+                      className="w-full h-full object-contain transform scale-125"
                     />
                   </div>
                 </AspectRatio>

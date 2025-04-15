@@ -70,11 +70,11 @@ const Fleet = () => {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {vehicles.map((vehicle) => (
                 <Card key={vehicle.id} className="h-full flex flex-col">
-                  <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                  <div className="aspect-video relative overflow-hidden rounded-t-lg p-4">
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name}
-                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                      className="object-contain w-full h-full transform scale-125"
                     />
                   </div>
                   
