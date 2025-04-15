@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -80,7 +81,7 @@ const VehicleShowcase = () => {
                       alt={vehicle.name} 
                       className={`h-full w-full object-contain transform transition-transform duration-[3000ms] hover:animate-breathe ${
                         vehicle.name === 'Toyota Noah' ? 'scale-125' : 
-                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-87' : 
+                        vehicle.name === 'Honda STEPWGN Air' ? 'scale-78' : 
                         vehicle.name === 'Honda Spada' ? 'scale-110' : 
                         'scale-100'
                       }`}
@@ -145,3 +146,4 @@ const VehicleShowcase = () => {
 };
 
 export default VehicleShowcase;
+
