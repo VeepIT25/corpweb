@@ -24,7 +24,7 @@ const vehicles = [
   },
   {
     id: 2,
-    name: "Honda Spada",
+    name: "Honda STEPWGN Spada",
     image: "/lovable-uploads/3a6f7227-dfcc-4a2f-871c-b0b7f7c1dcf1.png",
     description: "Comfort meets style in this premium 6-seater with excellent fuel economy.",
     features: ["6 Seats", "Premium Interior", "Fuel Efficient", "Excellent Comfort"],

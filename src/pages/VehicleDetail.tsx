@@ -10,7 +10,7 @@ const vehicles = {
   "toyota-noah": {
     name: "Toyota Noah Hybrid",
     description: "A spacious and fuel-efficient 6-seater Hybrid MPV perfect for families and ride-sharing.",
-    mainImage: "/lovable-uploads/5feae213-5fd6-4782-b5b7-ea40bfcc5af6.png",
+    mainImage: "/lovable-uploads/5feae213-fd6-4782-b5b7-ea40bfcc5af6.png",
     features: ["6 Seats", "Fuel Efficient", "Spacious Storage", "Latest Model", "Hybrid Technology"],
     color: "Black colour available",
     specifications: {
@@ -22,8 +22,8 @@ const vehicles = {
       fuelEconomy: "20km/L"
     }
   },
-  "honda-spada": {
-    name: "Honda Spada",
+  "honda-stepwgn-spada": {
+    name: "Honda STEPWGN Spada",
     description: "Comfort meets style in this premium 6-seater with excellent fuel economy.",
     mainImage: "/lovable-uploads/3a6f7227-dfcc-4a2f-871c-b0b7f7c1dcf1.png",
     features: ["6 Seats", "Premium Interior", "Fuel Efficient", "Excellent Comfort"],
