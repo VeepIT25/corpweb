@@ -29,7 +29,7 @@ const vehicles = [
     specifications: {
       seats: 6,
       fuelType: "Gasoline",
-      year: 2023,
+      year: 2024,
       transmission: "Automatic",
       engine: "1.8L",
       fuelEconomy: "16km/L"

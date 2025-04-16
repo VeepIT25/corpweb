@@ -31,7 +31,7 @@ const vehicles = {
     specifications: {
       seats: 6,
       fuelType: "Gasoline",
-      year: 2023,
+      year: 2024,
       engine: "1.8L",
       transmission: "Automatic",
       fuelEconomy: "16km/L"
