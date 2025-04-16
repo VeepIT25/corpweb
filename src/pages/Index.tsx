@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
 import LeadForm from "@/components/LeadForm";
@@ -23,7 +22,7 @@ const Index = () => {
                 Singapore's Premier 6-Seater Leasing Company
               </h2>
               <p className="mb-6 text-lg text-gray-700">
-                At VEEP, we believe in empowering drivers with premium 6-seater vehicles that maximize your earning potential while providing comfort for you and your family. Our fleet of Toyota Noah, Honda Stepwagon Spada, Honda Stepwagon Air vehicles are perfect for ride-sharing, family use, and more.
+                At VEEP, we believe in empowering drivers with premium 6-seater vehicles that maximize your earning potential while providing comfort for you and your family. Our fleet of Toyota Noah Hybrid, Honda Stepwagon Spada, Honda Stepwagon Air vehicles are perfect for ride-sharing, family use, and more.
               </p>
               <p className="mb-6 text-lg text-gray-700">
                 With the lowest leasing rates in Singapore and a comprehensive support system, we're committed to helping you go big and earn big.
@@ -96,4 +95,3 @@ const Index = () => {
 };
 
 export default Index;
-

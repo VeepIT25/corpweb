@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,16 +8,16 @@ import { CarFront, Users, Fuel, Calendar } from "lucide-react";
 
 const vehicles = {
   "toyota-noah": {
-    name: "Toyota Noah",
-    description: "A spacious and fuel-efficient 6-seater MPV perfect for families and ride-sharing.",
+    name: "Toyota Noah Hybrid",
+    description: "A spacious and fuel-efficient 6-seater Hybrid MPV perfect for families and ride-sharing.",
     mainImage: "/lovable-uploads/5feae213-5fd6-4782-b5b7-ea40bfcc5af6.png",
-    features: ["6 Seats", "Fuel Efficient", "Spacious Storage", "Latest Model"],
+    features: ["6 Seats", "Fuel Efficient", "Spacious Storage", "Latest Model", "Hybrid Technology"],
     color: "Black colour available",
     specifications: {
       seats: 6,
       fuelType: "Hybrid",
       year: 2023,
-      engine: "2.0L",
+      engine: "2.0L Hybrid",
       transmission: "Automatic",
       fuelEconomy: "20km/L"
     }
@@ -78,7 +77,7 @@ const VehicleDetail = () => {
                 <img 
                   src={vehicle.mainImage} 
                   alt={vehicle.name}
-                  className="object-contain w-full h-full transform scale-125" // Reduced back to 125 for consistency
+                  className="object-contain w-full h-full transform scale-125"
                 />
               </div>
             </div>
@@ -147,4 +146,3 @@ const VehicleDetail = () => {
 };
 
 export default VehicleDetail;
-

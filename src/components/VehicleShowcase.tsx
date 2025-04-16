@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -9,9 +10,9 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 const vehicles = [
   {
     id: 1,
-    name: "Toyota Noah",
+    name: "Toyota Noah Hybrid",
     image: "/lovable-uploads/5feae213-5fd6-4782-b5b7-ea40bfcc5af6.png",
-    description: "A spacious and fuel-efficient 6-seater MPV perfect for families and ride-sharing.",
+    description: "A spacious and fuel-efficient 6-seater Hybrid MPV perfect for families and ride-sharing.",
     features: ["6 Seats", "Fuel Efficient", "Spacious Storage", "Latest Model"],
     color: "Black colour available",
     specifications: {

@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,16 +8,16 @@ import { CarFront, Users, Fuel, Calendar } from "lucide-react";
 const vehicles = [
   {
     id: 1,
-    name: "Toyota Noah",
+    name: "Toyota Noah Hybrid",
     image: "/lovable-uploads/5feae213-5fd6-4782-b5b7-ea40bfcc5af6.png",
-    description: "A spacious and fuel-efficient 6-seater MPV perfect for families and ride-sharing.",
+    description: "A spacious and fuel-efficient 6-seater Hybrid MPV perfect for families and ride-sharing.",
     features: ["Advanced Safety", "Fuel Efficient", "Spacious Storage", "Latest Model"],
     specifications: {
       seats: 6,
       fuelType: "Hybrid",
       year: 2023,
       transmission: "Automatic",
-      engine: "2.0L",
+      engine: "2.0L Hybrid",
       fuelEconomy: "20km/L"
     }
   },
