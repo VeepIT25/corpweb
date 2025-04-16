@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 
@@ -9,7 +10,7 @@ const Header = () => {
   return <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <div className="flex items-center">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/e7bab766-e8cc-4819-a074-14f5d5ba7c77.png" 
               alt="VEEP Logo" 
@@ -19,7 +20,7 @@ const Header = () => {
                 e.currentTarget.src = "/placeholder.svg"; // Fallback to placeholder
               }}
             />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -79,3 +80,4 @@ const Header = () => {
     </header>;
 };
 export default Header;
+
